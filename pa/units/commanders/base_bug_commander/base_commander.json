@@ -154,7 +154,6 @@
             "bone": "socket_leftMuzzle"
         }
     ],
-    
     "audio": {
         "loops": {
             "build": {
@@ -180,7 +179,7 @@
         12
     ],
     "ai_metal_extractor_names": {
-      "basic": "BugBasicMetalExtractor",
-      "advanced": "BugAdvancedMetalExtractor"
-    }
+        "basic": "BugBasicMetalExtractor",
+        "advanced": "BugAdvancedMetalExtractor"
+      }
 }

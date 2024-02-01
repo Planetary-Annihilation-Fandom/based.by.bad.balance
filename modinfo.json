@@ -1,43 +1,35 @@
 {
     "identifier": "based.by.bad.balance",
-    "author":"Bastard Sprinkles Team, The Contributor, Gunflirt, Past Perfect",
-
-    "icon": "https://raw.githubusercontent.com/Planetary-Annihilation-Fandom/based.by.bad.balance/main/Celes.png",
+    "author": "Bastard Sprinkles Team, The Contributor, Team DAEDALUS, Taiga, Quildtide, Anonemous2, Gunflirt, Past Perfect, Anonemous2, billthebluebot, Taiga, Quitch, Quildtide, Ferretmaster, Tatarstan, DrWondertainment, nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Luther, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, Ferretmaster, BillTheBlueBot, Anonemous2, Taiga, Quitch, Quildtide, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar",
+    "icon": "https://raw.githubusercontent.com/Planetary-Annihilation-Fandom/based.by.bad.balance/main/icon.png",
     "display_name": "BABYBABA",
     "description": "Born in darkness, grown in the tomb - meet the bad balance mod!",
-
-    "category":[
-		"titans",
-		"units",
-		"balance"
-	],
-
+    "category": [
+        "balance",
+        "addon",
+        "unit",
+        "legion",
+        "bugs",
+        "expansion",
+        "in-game",
+        "faction",
+        "server",
+        "titans"
+    ],
     "forum": "https://steamcommunity.com/app/386070/discussions/0/3821908348803722363/",
     "github": "https://github.com/Planetary-Annihilation-Fandom/based.by.bad.balance",
-
     "build": "117640",
     "version": "2000.9.2-ru6",
     "date": "2024-02-01",
-    
-    "context":"server",
-    "priority": 19,
-
-    "scenes": {
-        "new_game":[
-            "coui://ui/mods/com.pa.expansion.celestial/new_game.js"
-        ],
-        "live_game_chat": [
-            "coui://ui/mods/com.pa.expansion.celestial/live_game_chat.js"
-        ]
-    },
-    "dependencies":[
-        "based.by.bad.experience",
-	    "com.pa.legion-expansion-server",
-	    "pa.mla.unit.addon"
+    "context": "server",
+    "priority": 10,
+    "dependencies": [
+        "based.by.bad.clicks"
     ],
-
+    "companions": [
+        "based.by.bad.clicks"
+    ],
     "framework": false,
-
-    "signature" : "Enjoy this modification!",
+    "signature": "Enjoy this modification!",
     "titansOnly": true
 }

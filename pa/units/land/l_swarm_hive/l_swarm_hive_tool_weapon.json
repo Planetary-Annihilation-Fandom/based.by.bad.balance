@@ -1,0 +1,25 @@
+{
+  "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
+  "ammo_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_ammo.json",
+  "max_range": 180,
+  "rate_of_fire": 2,
+  "ammo_source": "energy",
+  "ammo_demand": 200,
+  "ammo_capacity": 2800,
+  "ammo_per_shot": 1400,
+  "auto_attack": true,
+  "spread_fire": true,
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "yaw_rate": 3600,
+  "pitch_rate": 3600,
+  "yaw_range": 0,
+  "pitch_range": 0,
+  "firing_arc_yaw": 360,
+  "firing_arc_pitch": 180,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Seafloor"
+  ]
+}

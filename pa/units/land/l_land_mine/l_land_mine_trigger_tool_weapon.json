@@ -1,0 +1,22 @@
+{
+  "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
+  "tool_type": "TOOL_Weapon",
+  "ammo_id": "/pa/units/land/l_land_mine/l_land_mine_trigger_ammo.json",
+  "max_range": 5,
+  "rate_of_fire": 1,
+  "auto_attack": true,
+  "self_destruct": true,
+  "carpet_fire": true,
+  "firing_standard_deviation": 0,
+  "yaw_rate": 3600,
+  "pitch_rate": 3600,
+  "yaw_range": 360,
+  "pitch_range": 360,
+  "firing_arc_yaw": 360,
+  "firing_arc_pitch": 360,
+  "idle_aim_delay": 0,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ]
+}

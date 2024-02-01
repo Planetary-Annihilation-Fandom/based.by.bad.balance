@@ -1,0 +1,21 @@
+{
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "ammo_id": "/pa/units/sea/l_missile_ship/l_missile_ship_light_ammo.json",
+  "max_range": 130,
+  "rate_of_fire": 8,
+  "auto_attack": true,
+  "spread_fire": true,
+  "firing_standard_deviation": 5,
+  "yaw_rate": 360,
+  "pitch_rate": 360,
+  "yaw_range": 360,
+  "pitch_range": 90,
+  "idle_aim_delay": 0,
+  "target_layers": [
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Air & (EnergyProduction | Transport | Bomber | Gunship | Titan)",
+    "Air & Mobile"
+  ]
+}

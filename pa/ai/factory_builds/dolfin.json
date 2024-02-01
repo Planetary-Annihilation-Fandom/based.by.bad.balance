@@ -1,0 +1,29 @@
+{
+    "build_list": [
+        {
+            "build_conditions": [
+                [
+                    {
+                        "boolean": false,
+                        "test_type": "AloneOnPlanet"
+                    },
+                    {
+                        "boolean": true,
+                        "test_type": "CanDeployNavalFromBase"
+                    },
+                    {
+                        "test_type": "CanAffordBuildDemand"
+                    }
+                ]
+            ],
+            "builders": [
+                "AdvancedNavalFactory"
+            ],
+            "instance_count": -1,
+            "max_num_assisters": 15,
+            "name": "s17_paeiou_dolfin_0",
+            "priority": 199,
+            "to_build": "s17_paeiou_dolfin"
+        }
+    ]
+}

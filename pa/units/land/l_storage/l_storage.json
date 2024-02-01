@@ -1,0 +1,99 @@
+{
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "display_name": "!LOC:OmniSilo Storage Device",
+  "description": "!LOC:Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.",
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "max_health": 7500,
+  "build_metal_cost": 500,
+  "atrophy_rate": 8.33,
+  "atrophy_cool_down": 15,
+  "storage": {
+    "energy": 225000,
+    "metal": 15000
+  },
+  "energy_efficiency_requirement": 0.9,
+  "area_build_type": "Line",
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/land/l_storage/l_storage_death_weapon.json"
+  },
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Economy",
+    "UNITTYPE_Custom1"
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -47
+  },
+  "model": [
+    {
+      "animations": {
+        "idle": "/pa/units/land/l_storage/l_storage_idle.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/l_storage/l_storage.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
+    },
+    {
+      "animations": {
+        "idle": "/pa/units/land/l_storage/l_storage_idle.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/l_storage/l_storage.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "mesh_bounds": [
+    28,
+    28,
+    25
+  ],
+  "TEMP_texelinfo": 27.2827,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/energy"
+    },
+    "died": {
+      "effect_spec": "/pa/units/land/l_storage/black_hole_implosion.pfx"
+    }
+  },
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/energy"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_ring001",
+      "filename": "/pa/units/land/l_energy_plant_adv/black_hole.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "energy"
+    }
+  ]
+}

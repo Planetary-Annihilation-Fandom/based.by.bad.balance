@@ -1,0 +1,106 @@
+{
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "display_name": "!LOC:Advanced Mass Extractor",
+  "description": "!LOC:Advanced Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with a Mass Extractor.",
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "max_health": 5000,
+  "build_metal_cost": 1800,
+  "atrophy_rate": 33.3333,
+  "atrophy_cool_down": 15,
+  "production": {
+    "metal": 17
+  },
+  "consumption": {
+    "energy": 0
+  },
+  "area_build_type": "Sphere",
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_MetalProduction",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Economy",
+    "UNITTYPE_Custom1"
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -28
+  },
+  "strategic_icon_priority": 5,
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/l_mex_adv/l_metal_extractor_adv_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
+    "arrows": 10,
+    "filename": "/pa/units/land/l_mex_adv/l_metal_extractor_adv.papa",
+    "layer": "WL_LandHorizontal"
+  },
+  "mesh_bounds": [
+    15.5,
+    13.3685,
+    23.2
+  ],
+  "placement_size": [
+    16,
+    16
+  ],
+  "TEMP_texelinfo": 24.4307,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/metal"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Factory",
+      "effect_scale": 0.8
+    }
+  },
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/metal"
+    }
+  },
+  "lamps": [
+    {
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "intensity": 1.0,
+      "offset": [
+        0.0,
+        -2.273,
+        8.746
+      ],
+      "radius": 5.0
+    }
+  ],
+  "feature_requirements": [
+    "metal_spot"
+  ],
+  "force_snap_to_feature_orientation": true,
+  "icon_vertical_offset": 5,
+  "replaceable_units": [
+    "/pa/units/land/l_mex/l_mex.json",
+    "/pa/units/land/metal_extractor/metal_extractor.json",
+    "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.json"
+  ]
+}

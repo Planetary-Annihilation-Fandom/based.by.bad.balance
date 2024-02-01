@@ -1,0 +1,28 @@
+{
+  "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
+  "ammo_id": [
+    {
+      "layer": "WL_Air",
+      "id": "/pa/units/addon/swordfish/swordfish_ammo_torpedo.json"
+    }
+  ],
+  "max_range": 100,
+  "rate_of_fire": 8,
+  "ammo_source": "energy",
+  "ammo_demand": 100,
+  "ammo_capacity": 500,
+  "ammo_per_shot": 200,
+  "spawn_layers": "WL_Underwater",
+  "auto_attack": true,
+  "spread_fire": true,
+  "yaw_rate": 360,
+  "pitch_rate": 360,
+  "yaw_range": 90,
+  "pitch_range": 90,
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ],
+  "exclude_unit_types": "Hover | WaterHover"
+}

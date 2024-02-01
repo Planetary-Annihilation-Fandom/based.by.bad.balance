@@ -1,0 +1,20 @@
+{
+  "tool_type": "TOOL_Weapon",
+  "ammo_id": "/pa/units/sea/l_sea_mine/l_sea_mine_ammo.json",
+  "max_range": 10,
+  "rate_of_fire": 5,
+  "auto_attack": true,
+  "self_destruct": true,
+  "yaw_rate": 0,
+  "pitch_rate": 0,
+  "yaw_range": 0,
+  "pitch_range": 0,
+  "firing_arc_yaw": 360,
+  "firing_arc_pitch": 360,
+  "idle_aim_delay": 0,
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+  "display_name": "!LOC:Rig",
+  "description": "!LOC:Orbital Economy - Produces metal and energy. Only buildable on gas giants.",
+  "max_health": 3500,
+  "build_metal_cost": 3200,
+  "atrophy_rate": 60.0,
+  "atrophy_cool_down": 15.0,
+  "production": {
+    "energy": 3000,
+    "metal": 25
+  },
+  "area_build_type": "Sphere",
+  "area_build_separation": 100,
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/orbital/mining_platform/mining_platform_nuke.json"
+  },
+  "unit_types": [
+    "UNITTYPE_Orbital",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_EnergyProduction",
+    "UNITTYPE_MetalProduction",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Economy",
+    "UNITTYPE_Custom1"
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 125,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "physics": {
+    "ignore_gravity": true,
+    "radius": 40
+  },
+  "selection_icon": {
+    "diameter": -83
+  },
+  "model": {
+    "animations": {
+      "idle": "/pa/units/orbital/l_mining_platform/l_mining_platform_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+    "filename": "/pa/units/orbital/l_mining_platform/l_mining_platform.papa"
+  },
+  "mesh_bounds": [
+    118.558,
+    118.558,
+    54.449
+  ],
+  "placement_size": [
+    100,
+    100
+  ],
+  "TEMP_texelinfo": 48,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital_platform"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/orbital",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/mining_platform_orbital_explosion.pfx"
+    }
+  },
+  "audio": {
+    "loops": {
+      "enabled": {
+        "cue": "/SE/Celestial/Planet_Engines_Loop",
+        "flag": "enable_changed",
+        "should_start_func": "is_enabled",
+        "should_stop_func": "is_disabled"
+      }
+    }
+  },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/orbital/l_mining_platform/top_light.pfx",
+      "type": "idle"
+    },
+    {
+      "filename": "/pa/units/orbital/l_mining_platform/main_effect.pfx",
+      "type": "idle"
+    }
+  ],
+  "build_restrictions": "Terrainless"
+}

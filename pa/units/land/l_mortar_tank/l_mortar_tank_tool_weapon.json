@@ -1,0 +1,23 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": [
+    {
+      "id": "/pa/units/land/l_mortar_tank/l_mortar_tank_ammo.json",
+      "layer": "WL_AnyLand"
+    }
+  ],
+  "max_range": 65,
+  "rate_of_fire": 1.5,
+  "auto_attack": true,
+  "spread_fire": true,
+  "yaw_rate": 160,
+  "pitch_rate": 120,
+  "yaw_range": 360,
+  "pitch_range": 90,
+  "idle_aim_delay": 3,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ]
+}

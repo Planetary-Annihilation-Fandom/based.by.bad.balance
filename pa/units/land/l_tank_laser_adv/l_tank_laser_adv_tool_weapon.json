@@ -1,0 +1,18 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": "/pa/units/land/l_tank_laser_adv/l_tank_laser_adv_ammo.json",
+  "max_range": 130,
+  "rate_of_fire": 0.4,
+  "auto_attack": true,
+  "spread_fire": true,
+  "yaw_rate": 60,
+  "pitch_rate": 60,
+  "yaw_range": 180,
+  "pitch_range": 40,
+  "idle_aim_delay": 3,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ]
+}

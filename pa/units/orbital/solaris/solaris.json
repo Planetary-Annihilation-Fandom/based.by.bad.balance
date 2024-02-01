@@ -1,0 +1,103 @@
+{
+  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+  "unit_name": "Solaris",
+  "display_name": "!LOC:Solaris",
+  "description": "!LOC:Orbital Solar Array Drone - Produces energy. Mobile but slow. Weak. Attacks land, air, and sea targets.",
+  "spawn_layers": "WL_Orbital",
+  "max_health": 200,
+  "build_metal_cost": 900,
+  "production": {
+    "energy": 1260
+  },
+  "nearby_target_tick_update_interval": 5,
+  "tools": [
+    {
+      "spec_id": "/pa/units/orbital/solaris/solaris_weapon.json",
+      "aim_bone": "bone_rightSolarShield",
+      "fire_event": "fired",
+      "muzzle_bone": "bone_rightSolarShield"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_EnergyProduction",
+    "UNITTYPE_Economy",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Interplanetary",
+    "UNITTYPE_Custom58"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Attack"
+  ],
+  "navigation": {
+    "type": "orbital",
+    "acceleration": 10,
+    "brake": 10,
+    "move_speed": 20,
+    "turn_speed": 45,
+    "hover_time": -1.0
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "orbital",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 100
+        }
+      ]
+    }
+  },
+  "physics": {
+    "radius": 8,
+    "gravity_scalar": 0.001
+  },
+  "selection_icon": {
+    "diameter": 34.0,
+    "vertical_offset": -3.0
+  },
+  "model": {
+    "filename": "/pa/units/orbital/solar_array/solar_array.papa",
+    "animations": {
+      "open": "/pa/units/orbital/solar_array/solar_array_anim_open.papa",
+      "closed": "/pa/units/orbital/solar_array/solar_array_anim_closed.papa",
+      "deploy": "/pa/units/orbital/solar_array/solar_array_anim_deploy.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json"
+  },
+  "mesh_bounds": [
+    50,
+    15,
+    6
+  ],
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "TEMP_texelinfo": 25.0,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/solar_drone_fire",
+      "effect_spec": "/pa/units/air/solar_drone/solar_drone_muzzle_flash.pfx bone_rightSolarShield"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/orbital",
+      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+      "effect_scale": 1.5
+    }
+  }
+}

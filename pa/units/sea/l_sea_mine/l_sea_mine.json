@@ -1,0 +1,139 @@
+{
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "display_name": "!LOC:Sea Urchin",
+  "description": "!LOC:Sea Mine - High damage. Invisible to most units.",
+  "spawn_layers": "WL_WaterSurface",
+  "max_health": 5,
+  "wreckage_health_frac": 0,
+  "build_metal_cost": 80,
+  "area_build_type": "Sphere",
+  "area_build_separation": 1,
+  "guard_layer": "WL_AnySurface",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/sea/l_sea_mine/l_sea_mine_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Basic",
+    "UNITTYPE_Naval",
+    "UNITTYPE_Defense",
+    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_Custom1"
+  ],
+  "recon": {
+    "observable": {
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 10,
+          "shape": "sphere"
+        },
+        {
+          "channel": "radar",
+          "layer": "underwater",
+          "radius": 10,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "physics": {
+    "ignore_collisions": true
+  },
+  "selection_icon": {
+    "diameter": -7
+  },
+  "strategic_icon_priority": 3,
+  "model": [
+    {
+      "animations": {
+        "idle": "/pa/units/sea/l_sea_mine/l_sea_mine_float.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/sea/l_sea_mine/l_sea_mine.papa"
+    }
+  ],
+  "mesh_bounds": [
+    10,
+    10,
+    10
+  ],
+  "TEMP_texelinfo": 2.37699,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/barrier"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/barrier",
+      "effect_spec": "/pa/effects/specs/default_explosion_naval_sub.pfx"
+    }
+  },
+  "area_build_pattern": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ]
+}

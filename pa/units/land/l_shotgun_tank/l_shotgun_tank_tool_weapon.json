@@ -1,0 +1,24 @@
+{
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "ammo_id": "/pa/units/land/l_shotgun_tank/l_shotgun_tank_ammo.json",
+  "max_range": 50,
+  "rate_of_fire": 1,
+  "auto_attack": true,
+  "spread_fire": false,
+  "firing_standard_deviation": 8,
+  "yaw_rate": 240,
+  "yaw_range": 180,
+  "firing_arc_yaw": 5,
+  "firing_arc_pitch": 20,
+  "idle_aim_delay": 1,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ],
+  "target_priorities": [
+    "Mobile - Air",
+    "Mobile",
+    "Structure - Wall"
+  ]
+}

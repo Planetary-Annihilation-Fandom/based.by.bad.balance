@@ -1,0 +1,15 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": "/pa/units/sea/l_destroyer/l_destroyer_ammo.json",
+  "max_range": 210,
+  "rate_of_fire": 0.33,
+  "auto_attack": true,
+  "yaw_rate": 75,
+  "pitch_rate": 60,
+  "yaw_range": 120,
+  "pitch_range": 75,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ]
+}

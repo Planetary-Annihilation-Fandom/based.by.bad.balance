@@ -1,0 +1,18 @@
+{
+  "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",
+  "tool_type": "TOOL_Weapon",
+  "ammo_id": "/pa/units/air/l_fighter_adv/l_fighter_adv_rocket_ammo.json",
+  "max_range": 180,
+  "rate_of_fire": 0.33,
+  "auto_attack": true,
+  "spread_fire": true,
+  "firing_standard_deviation": 25,
+  "yaw_rate": 360,
+  "pitch_rate": 90,
+  "yaw_range": 180,
+  "pitch_range": 45,
+  "firing_arc_yaw": 360,
+  "target_layers": [
+    "WL_Air"
+  ]
+}

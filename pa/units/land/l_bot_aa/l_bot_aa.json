@@ -1,0 +1,109 @@
+{
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "display_name": "!LOC:Patriot",
+  "description": "!LOC:Anti-Air Walker - Equipped with homing missiles. Only attacks air targets.",
+  "max_health": 120,
+  "build_metal_cost": 150,
+  "guard_layer": "WL_Air",
+  "nearby_target_tick_update_interval": 3,
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": [
+        "socket_muzzle01",
+        "socket_muzzle03",
+        "socket_muzzle02",
+        "socket_muzzle04"
+      ],
+      "spec_id": "/pa/units/land/l_bot_aa/l_bot_aa_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_AirDefense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable",
+    "UNITTYPE_Custom1"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "navigation": {
+    "acceleration": 120,
+    "brake": 120,
+    "group_preference": "back",
+    "move_speed": 14,
+    "turn_speed": 720
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 90,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "physics": {
+    "radius": 2.25,
+    "air_friction":2.5
+  },
+  "selection_icon": {
+    "diameter": -8
+  },
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/l_bot_aa/l_bot_aa_idle.papa",
+      "walk": "/pa/units/land/l_bot_aa/l_bot_aa_walk.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
+    "filename": "/pa/units/land/l_bot_aa/l_bot_aa.papa",
+    "walk_speed": 3
+  },
+  "mesh_bounds": [
+    4.5,
+    3,
+    3.8
+  ],
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0.3,
+        3
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "TEMP_texelinfo": 5.47132,
+  "events": {
+    "died": {
+      "effect_scale": 0.6
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/bot_aa_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03"
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/aa_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  }
+}

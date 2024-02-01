@@ -1,0 +1,21 @@
+{
+  "base_spec": "/pa/tools/base_turret/base_turret.json",
+  "ammo_id": "/pa/units/sea/missile_ship/missile_ship_aa_ammo.json",
+  "max_range": 150,
+  "rate_of_fire": 4,
+  "auto_attack": true,
+  "spread_fire": true,
+  "yaw_rate": 0,
+  "pitch_rate": 0,
+  "yaw_range": 0,
+  "pitch_range": 0,
+  "firing_arc_yaw": 360,
+  "firing_arc_pitch": 360,
+  "target_layers": [
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Air & ( EnergyProduction | Transport | Bomber | Gunship | Titan )",
+    "Mobile & Air"
+  ]
+}

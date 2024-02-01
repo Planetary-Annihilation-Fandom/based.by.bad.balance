@@ -1,0 +1,19 @@
+{
+  "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
+  "ammo_id": "/pa/units/sea/l_sea_tank/l_sea_tank_torpedo_ammo.json",
+  "max_range": 200,
+  "rate_of_fire": 0.5,
+  "spawn_layers": "WL_Underwater",
+  "auto_attack": true,
+  "spread_fire": true,
+  "yaw_rate": 360,
+  "pitch_rate": 360,
+  "yaw_range": 180,
+  "pitch_range": 180,
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ],
+  "exclude_unit_types": "Hover | WaterHover"
+}

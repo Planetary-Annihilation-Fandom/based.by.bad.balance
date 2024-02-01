@@ -1,0 +1,33 @@
+{
+  "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
+  "ammo_id": [
+    {
+      "id": "/pa/units/land/l_necromancer/l_necromancer_ammo.json",
+      "layer": "WL_AnyLayer"
+    }
+  ],
+  "max_range": 160,
+  "rate_of_fire": 1,
+  "ammo_source": "metal",
+  "ammo_demand": 35,
+  "ammo_capacity": 280,
+  "ammo_per_shot": 280,
+  "auto_attack": true,
+  "spread_fire": true,
+  "firing_standard_deviation": 360,
+  "yaw_rate": 3600,
+  "pitch_rate": 3600,
+  "yaw_range": 180,
+  "pitch_range": 180,
+  "target_layers": [
+    "WL_LandHorizontal"
+  ],
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_artillery",
+      "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+    }
+  },
+  "fire_arc_pitch": 15,
+  "start_fully_charged": true
+}

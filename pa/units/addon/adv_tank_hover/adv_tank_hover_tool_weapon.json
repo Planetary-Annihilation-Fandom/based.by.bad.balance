@@ -1,0 +1,17 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": "/pa/units/addon/adv_tank_hover/adv_tank_hover_ammo.json",
+  "max_range": 130,
+  "rate_of_fire": 0.75,
+  "auto_attack": true,
+  "spread_fire": true,
+  "yaw_rate": 20,
+  "pitch_rate": 20,
+  "yaw_range": 180,
+  "pitch_range": 120,
+  "idle_aim_delay": 1,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ]
+}

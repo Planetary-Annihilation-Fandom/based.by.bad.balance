@@ -1,0 +1,19 @@
+{
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "ammo_id": "/pa/units/orbital/c_l_orbital_laser/l_orbital_laser_weapon_rocket_ammo.json",
+  "max_range": 210,
+  "rate_of_fire": 0.2,
+  "auto_attack": true,
+  "spread_fire": true,
+  "yaw_rate": 0,
+  "pitch_rate": 0,
+  "yaw_range": 0,
+  "pitch_range": 0,
+  "firing_arc_yaw": 360,
+  "firing_arc_pitch": 360,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_SeaFloor"
+  ]
+}

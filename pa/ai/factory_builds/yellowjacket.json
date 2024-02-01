@@ -1,0 +1,40 @@
+{
+    "build_list": [
+        {
+            "build_conditions": [
+                [
+                    {
+                        "boolean": false,
+                        "test_type": "AloneOnPlanet"
+                    },
+                    {
+                        "test_type": "CanAffordBuildDemand"
+                    }
+                ],
+                [
+                    {
+                        "boolean": true,
+                        "test_type": "AloneOnPlanet"
+                    },
+                    {
+                        "test_type": "CanAffordBuildDemand"
+                    },
+                    {
+                        "compare0": "<",
+                        "test_type": "UnitCountOnPlanet",
+                        "unit_type_string0": "Bomber",
+                        "value0": 20
+                    }
+                ]
+            ],
+            "builders": [
+                "AdvancedAirFactory"
+            ],
+            "instance_count": -1,
+            "max_num_assisters": 15,
+            "name": "s17_paeiou_yellowjacket_0",
+            "priority": 199,
+            "to_build": "s17_paeiou_yellowjacket"
+        }
+    ]
+}

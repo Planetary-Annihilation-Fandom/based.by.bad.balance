@@ -1,0 +1,224 @@
+{
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "unit_name": "Celestial-wide Radar",
+  "si_name": "c_l_system_radar",
+  "display_name": "!LOC:Celestial-wide Radar",
+  "description": "!LOC:Celestial-wide Radar - Radar telemetry with large planet vision radius. Allows to see all orbital targets in the entire star system. Visible to everyone.",
+  "spawn_layers": "WL_AnySurface",
+  "max_health": 2000,
+  "build_metal_cost": 4800,
+  "atrophy_rate": 5,
+  "atrophy_cool_down": 15.0,
+  "consumption": {
+    "energy": 8000
+  },
+  "energy_efficiency_requirement": 0.9,
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Recon",
+    "UNITTYPE_Interplanetary",
+    "UNITTYPE_Radar",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important",
+    "UNITTYPE_Custom1"
+  ],
+  "recon": {
+    "observable": {
+      "always_visible": true
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 500,
+          "uses_energy": true
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "radar",
+          "shape": "sphere",
+          "radius": 1500,
+          "uses_energy": true
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 500,
+          "uses_energy": true
+        },
+        {
+          "layer": "celestial",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 10000000,
+          "uses_energy": true
+        }
+      ]
+    }
+  },
+  "physics": {
+    "collision_layers": "WL_AnySurface"
+  },
+  "selection_icon": {
+    "diameter": -55.0
+  },
+  "model": [
+    {
+      "filename": "/pa/units/l_addon/system_radar/system_radar.papa",
+      "animations": {
+        "start": "/pa/units/l_addon/system_radar/system_radar_anim_open.papa",
+        "loop": "/pa/units/l_addon/system_radar/system_radar_anim_idle.papa",
+        "end": "/pa/units/l_addon/system_radar/system_radar_anim_close.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
+      "skirt_decal": "/pa/effects/specs/skirt_orbital_radar.json"
+    }
+  ],
+  "mesh_bounds": [
+    25,
+    31,
+    35
+  ],
+  "TEMP_texelinfo": 20,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/radar"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/radar",
+      "effect_scale": 1.25
+    }
+  },
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/radar"
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "energy",
+      "filename": "/pa/units/l_addon/system_radar/radar_on.json",
+      "bone": "socket_radar",
+      "offset": [
+        0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "energy",
+      "filename": "/pa/units/l_addon/system_radar/radar_on_lights.json",
+      "bone": "bone_main_antenna_top",
+      "offset": [
+        0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "energy",
+      "filename": "/pa/units/l_addon/system_radar/radar_on_lights_secondary.json",
+      "bone": "bone_side_antenna",
+      "offset": [
+        0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "energy",
+      "filename": "/pa/units/l_addon/system_radar/radar_on_lights_secondary.json",
+      "bone": "bone_side_antenna",
+      "offset": [
+        0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0,
+        0,
+        60
+      ]
+    },
+    {
+      "type": "energy",
+      "filename": "/pa/units/l_addon/system_radar/radar_on_lights_secondary.json",
+      "bone": "bone_side_antenna",
+      "offset": [
+        0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0,
+        0,
+        120
+      ]
+    },
+    {
+      "type": "energy",
+      "filename": "/pa/units/l_addon/system_radar/radar_on_lights_secondary.json",
+      "bone": "bone_side_antenna",
+      "offset": [
+        0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0,
+        0,
+        180
+      ]
+    },
+    {
+      "type": "energy",
+      "filename": "/pa/units/l_addon/system_radar/radar_on_lights_secondary.json",
+      "bone": "bone_side_antenna",
+      "offset": [
+        0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0,
+        0,
+        240
+      ]
+    },
+    {
+      "type": "energy",
+      "filename": "/pa/units/l_addon/system_radar/radar_on_lights_secondary.json",
+      "bone": "bone_side_antenna",
+      "offset": [
+        0,
+        0.0,
+        0.0
+      ],
+      "orientation": [
+        0,
+        0,
+        300
+      ]
+    }
+  ]
+}

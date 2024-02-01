@@ -1,0 +1,29 @@
+{
+	"identifier": "com.pa.daedelus.experimentals",
+	"display_name": "Section 17 - Endgame Units",
+	"description": "Adds new units to the game, most notably a Naval Titan, an Orbital Fathership, and Tier 3 Experimentals.",
+	"author": "Team DAEDALUS, Taiga, Quildtide, Anonemous2",
+	"signature": "not yet implemented",
+	"forum": "https://forums.planetaryannihilation.com/threads/section-17-unit-addition-mod.73546/",
+	"priority": 90,
+	"icon": "https://raw.githubusercontent.com/DAEDALUS-Modding/Section-17/main/icon.jpg",
+	"titansOnly": true,
+	"category": [
+		"addon",
+		"unit",
+		"expansion",
+		"titans"
+	],
+	"scenes": {
+		"shared_build": [
+			"coui://ui/mods/com.pa.daedalus.experimentals/shared_build.js"
+		],
+		"icon_atlas": [
+			"coui://ui/mods/com.pa.daedalus.experimentals/icon_atlas.js"
+		]
+	},
+	"context": "server",
+	"date": "2023-08-30",
+	"build": "116982",
+	"version": "0.7.0"
+}

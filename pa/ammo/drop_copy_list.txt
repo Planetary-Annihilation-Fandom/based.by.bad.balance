@@ -1,0 +1,2 @@
+    "/pa/units/land/unit_cannon/unit_cannon_deploy.json",
+    "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json"

@@ -1,0 +1,13 @@
+{
+    "unit_map": {
+        "s17_paeiou_dolfin": {
+            "spec_id": "/pa/units/paeiou/dolfin/dolfin.json"
+        },
+        "s17_paeiou_spider": {
+            "spec_id": "/pa/units/paeiou/spider/spider.json"
+        },
+        "s17_paeiou_yellowjacket": {
+            "spec_id": "/pa/units/paeiou/yellowjacket/yellowjacket.json"
+        }
+    }
+}

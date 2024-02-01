@@ -1,0 +1,5 @@
+{
+    "diffuse": "/pa/terrain/ice/textures/base/ice_snow_decal_05.papa",
+    "normal": "/pa/terrain/lava/textures/base/lava_decal_crater_normal.papa",
+    "material": "/pa/terrain/generic/decal_null_material.papa"
+}

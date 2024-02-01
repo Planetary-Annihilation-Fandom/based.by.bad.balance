@@ -1,0 +1,22 @@
+{
+  "base_spec": "/pa/tools/engineer_build_arm_adv/engineer_build_arm_adv.json",
+  "max_range": 120,
+  "construction_demand": {
+    "energy": 400,
+    "metal": 120
+  },
+  "auto_reclaim": true,
+  "auto_repair": true,
+  "can_only_assist_with_buildable_items": true,
+  "yaw_rate": 3600,
+  "pitch_rate": 3600,
+  "yaw_range": 360,
+  "pitch_range": 360,
+  "firing_arc_yaw": 360,
+  "firing_arc_pitch": 360,
+  "idle_aim_delay": -1,
+  "reclaim_types": [
+    "Wreckage",
+    "Feature"
+  ]
+}

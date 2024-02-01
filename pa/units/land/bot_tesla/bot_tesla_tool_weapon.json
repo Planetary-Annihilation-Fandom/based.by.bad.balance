@@ -1,0 +1,23 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": "/pa/units/land/bot_tesla/bot_tesla_ammo.json",
+  "max_range": 65,
+  "rate_of_fire": 0.5,
+  "ammo_source": "energy",
+  "ammo_demand": 200,
+  "ammo_capacity": 400,
+  "ammo_per_shot": 400,
+  "auto_attack": true,
+  "spread_fire": true,
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "yaw_rate": 360,
+  "pitch_rate": 360,
+  "yaw_range": 180,
+  "pitch_range": 60,
+  "idle_aim_delay": 3.0,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ]
+}

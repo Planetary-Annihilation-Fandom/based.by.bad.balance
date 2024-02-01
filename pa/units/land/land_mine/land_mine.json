@@ -1,0 +1,153 @@
+{
+  "unit_name": "Land Mine",
+  "display_name": "!LOC:Land Mine",
+  "description": "!LOC:Land Mine - Detonates when enemy units are in proximity.",
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "max_health": 5,
+  "wreckage_health_frac": 0.0,
+  "build_metal_cost": 20,
+  "area_build_type": "Sphere",
+  "area_build_separation": 1.0,
+  "alt_area_build_separation": 1.0,
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/land_mine/land_mine_tool_weapon.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Land",
+    "UNITTYPE_Naval",
+    "UNITTYPE_Defense",
+    "UNITTYPE_CombatFabBuild",
+    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_Custom58"
+  ],
+  "recon": {
+    "observable": {
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 2
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 2
+        }
+      ]
+    }
+  },
+  "physics": {
+    "type": "Structure",
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "shape": "Box",
+    "radius": 1,
+    "allow_pushing": false,
+    "push_sideways": false,
+    "allow_underground": false,
+    "collide_with_types": [
+      "Projectile"
+    ]
+  },
+  "selection_icon": {
+    "diameter": 7.0
+  },
+  "strategic_icon_priority": 3,
+  "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/land/land_mine/land_mine.papa"
+    },
+    {
+      "layer": "WL_WaterSurface",
+      "filename": "/pa/units/sea/sea_mine/sea_mine.papa"
+    }
+  ],
+  "mesh_bounds": [
+    4.0,
+    4.0,
+    1.0
+  ],
+  "TEMP_texelinfo": 2.37699,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/barrier"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/barrier",
+      "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+    }
+  },
+  "alt_area_build_pattern": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "area_max_radius": 150.0,
+  "alt_area_build_type": "Sphere",
+  "alt_area_max_radius": 150.0
+}

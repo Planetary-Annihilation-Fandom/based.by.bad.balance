@@ -1,0 +1,16 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": "/pa/units/sea/l_hover_ship/l_hover_ship_ammo_side.json",
+  "max_range": 110,
+  "rate_of_fire": 1,
+  "auto_attack": true,
+  "yaw_rate": 60,
+  "pitch_rate": 60,
+  "yaw_range": 120,
+  "pitch_range": 70,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Air"
+  ]
+}

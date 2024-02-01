@@ -1,0 +1,21 @@
+{
+  "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",
+  "tool_type": "TOOL_Weapon",
+  "ammo_id": "/pa/units/land/l_rocket_barrage/l_rocket_barrage_ammo.json",
+  "max_range": 160,
+  "rate_of_fire": 0.8,
+  "auto_attack": true,
+  "spread_fire": true,
+  "firing_standard_deviation": 25,
+  "arc_type": "High",
+  "yaw_rate": 70,
+  "pitch_rate": 70,
+  "yaw_range": 360,
+  "pitch_range": 180,
+  "firing_arc_yaw": 10,
+  "firing_arc_pitch": 10,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ]
+}

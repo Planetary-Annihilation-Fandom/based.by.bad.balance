@@ -1,0 +1,23 @@
+{
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "ammo_id": "/pa/units/air/l_gunship/l_gunship_main_ammo.json",
+  "max_range": 80,
+  "rate_of_fire": 4,
+  "auto_attack": true,
+  "yaw_rate": 360,
+  "pitch_rate": 360,
+  "yaw_range": 360,
+  "pitch_range": 100,
+  "idle_aim_delay": 0.25,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "target_priorities": [
+    "Commander",
+    "AirDefense & (Land | Naval)",
+    "Titan & (Land | Naval)",
+    "Artillery & Advanced & (Land | Naval)",
+    "Nuke | NukeDefense"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "display_name": "!LOC:Peacekeeper",
+  "description": "!LOC:Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets.",
+  "max_health": 170,
+  "build_metal_cost": 75,
+  "guard_layer": "WL_AnySurface",
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": [
+        "socket_muzzle"
+      ],
+      "projectiles_per_fire": 1,
+      "spec_id": "/pa/units/land/l_assault_bot/l_assault_bot_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable",
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Amphibious"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "navigation": {
+    "acceleration": 50,
+    "brake": 50,
+    "group_preference": "front",
+    "move_speed": 18,
+    "turn_speed": 720,
+    "type": "amphibious"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "physics": {
+    "radius": 2,
+    "air_friction":2.5
+  },
+  "selection_icon": {
+    "diameter": -8
+  },
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/l_assault_bot/l_assault_bot_idle.papa",
+      "walk": "/pa/units/land/l_assault_bot/l_assault_bot_walk.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
+    "filename": "/pa/units/land/l_assault_bot/l_assault_bot.papa",
+    "walk_speed": 3
+  },
+  "mesh_bounds": [
+    4,
+    2.5,
+    4
+  ],
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        3.5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "TEMP_texelinfo": 4.07719,
+  "events": {
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/assault_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
+    }
+  },
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/bot/assault"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
+  "ammo_id": [
+    {
+      "id": "/pa/units/land/l_mortar_tank/l_mortar_tank_torpedo_water_ammo.json",
+      "layer": "WL_Seafloor"
+    },
+    {
+      "id": "/pa/units/land/l_mortar_tank/l_mortar_tank_torpedo_land_ammo.json",
+      "layer": "WL_LandHorizontal"
+    }
+  ],
+  "max_range": 150,
+  "rate_of_fire": 0.285,
+  "auto_attack": true,
+  "spread_fire": true,
+  "yaw_rate": 160,
+  "pitch_rate": 120,
+  "yaw_range": 360,
+  "pitch_range": 90,
+  "firing_arc_yaw": 45,
+  "firing_arc_pitch": 90,
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ],
+  "exclude_unit_types": "Hover | WaterHover"
+}

@@ -1,0 +1,107 @@
+{
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "display_name": "!LOC:Nanoswarm",
+  "description": "!LOC:Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.",
+  "spawn_layers": "WL_LandHorizontal",
+  "max_health": 75,
+  "wreckage_health_frac": 0.0,
+  "build_metal_cost": 30,
+  "guard_radius": 300,
+  "guard_layer": "WL_AnySurface",
+  "tools": [
+    {
+      "aim_bone": "bone_body",
+      "spec_id": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm_death_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Custom1"
+  ],
+  "command_caps": [],
+  "navigation": {
+    "acceleration": 60,
+    "move_speed": 50,
+    "turn_speed": 1080,
+    "type": "hover"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 40,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 40,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "physics": {
+    "allow_pushing": true,
+    "radius": 0
+  },
+  "selection_icon": {
+    "diameter": -1
+  },
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/bot_nanoswarm/bot_nanoswarm_anim_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json",
+    "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa"
+  },
+  "mesh_bounds": [
+    4,
+    4,
+    4
+  ],
+  "TEMP_texelinfo": 6.38702,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/swarm",
+      "effect_scale": 1.0
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/swarm",
+      "effect_spec": ""
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/swarm_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/swarm"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_body",
+      "filename": "/pa/effects/specs/nanoswarm_idle.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "idle"
+    }
+  ]
+}

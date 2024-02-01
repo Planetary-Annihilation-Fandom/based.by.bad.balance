@@ -1,0 +1,106 @@
+{
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "display_name": "!LOC:Nova",
+  "description": "!LOC:Combat Reclaimer - Reclaims nearby wreckage and trees. Repairs friendly units. Can't help build other structures.",
+  "max_health": 180,
+  "build_metal_cost": 250,
+  "guard_radius": 0,
+  "guard_layer": "WL_Air",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/air/l_air_combat/l_air_combat_reclaim_tool.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Air",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Use"
+  ],
+  "navigation": {
+    "acceleration": 90,
+    "brake": 60,
+    "move_speed": 50,
+    "turn_speed": 1080,
+    "wobble_factor": 0.25,
+    "wobble_speed": 0.2
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 40,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -14
+  },
+  "model": {
+    "animations": {
+      "idle": "/pa/units/air/l_air_bomb/l_air_bomb_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+    "filename": "/pa/units/air/l_air_bomb/l_air_bomb.papa"
+  },
+  "mesh_bounds": [
+    6,
+    6,
+    4
+  ],
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "TEMP_texelinfo": 10.4837,
+  "events": {
+    "fired": {
+      "effect_spec": "/pa/units/air/l_air_bomb/l_air_bomb_fire.pfx bone_root"
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_transport_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/transport"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/air/l_air_bomb/l_air_bomb.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "socket_muzzle",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    }
+  ]
+}
